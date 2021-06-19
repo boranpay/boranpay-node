@@ -2,15 +2,27 @@
   "name": "boranpay",
   "version": "1.0.0",
   "description": "Boranpay API",
+  "maintainers": [
+    "Boclair Temgoua <temgoua2013@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boranpay/boranpay-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/boranpay/boranpay-node/issues"
+  },
+  "homepage": "https://www.boranpay.com/",
+  "main": "index.js",
+  "types": "types",
+  "engines": {
+    "node": "^8.1 || >=12.*"
+  },
   "keywords": [
     "boranpay",
     "payment processing",
     "api"
   ],
-  "engines": {
-    "node": "^8.1 || >=12.*"
-  },
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
