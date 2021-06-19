@@ -24,13 +24,15 @@
     "api"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:integration": "mocha test --recursive --timeout 60000",
+    "test": "npm run test:integration",
+    "test:orders": "mocha test/orders --recursive --timeout 60000"
   },
   "author": "KazouGroup",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.17.0",
     "@typescript-eslint/parser": "^4.17.0",
-    "chai": "~4.2.0",
+    "chai": "^4.3.4",
     "chai-as-promised": "~7.1.1",
     "coveralls": "^3.0.0",
     "dotenv": "^8.2.0",
@@ -50,5 +52,9 @@
     "prettier": "^2.2.1",
     "typescript": "^4.2.3"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@paypal/paypalhttp": "^1.0.0",
+    "dirty-chai": "^2.0.1"
+  }
 }
