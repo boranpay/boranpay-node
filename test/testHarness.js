@@ -4,7 +4,7 @@
 const boranpay = require('../lib/lib').core;
 
 const client = () => {
-    return new boranpay.PayPalHttpClient(environment());
+    // return new boranpay.PayPalHttpClient(environment());
 }
 
 const environment = () => {
